@@ -6,4 +6,12 @@
     <item name="tvRoleAkun" type="id"/>
     <item name="btnEditAkun" type="id"/>
     <item name="btnHapusAkun" type="id"/>
+    <item name="tvStatusAkun" type="id"/>
+    <item name="btnMenuAkun" type="id"/>
+    <item name="tvInisialMember" type="id"/>
+    <item name="tvNamaMemberItem" type="id"/>
+    <item name="tvTelpMemberItem" type="id"/>
+    <item name="tvKotaMemberItem" type="id"/>
+    <item name="tvStatusMemberItem" type="id"/>
+    <item name="btnMenuMember" type="id"/>
 </resources>
