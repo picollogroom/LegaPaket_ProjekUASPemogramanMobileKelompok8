@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/main"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/banner">
+    
+    <RelativeLayout
+        android:id="@+id/bannerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@drawable/banner_bg">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_above="@id/text"
+            android:src="@drawable/logoanjay">
+
+        </ImageView>
+        <TextView
+            android:id="@+id/text"
+            android:text="Lega Paket"
+            android:textColor="@color/banner"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="70dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+        <TextView
+            android:id="@+id/textSubtitle"
+            android:text="Masuk Ke Sistem Lega Paket"
+            android:textColor="@color/banner"
+            android:textSize="14sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="165dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/cardLogin"
+        android:layout_below="@+id/bannerLayout"
+        android:layout_marginTop="-30dp"
+        android:layout_margin="16dp"
+        android:orientation="vertical"
+        android:background="@drawable/card_bg"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/etUsername"
+            android:hint="Username"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <ProgressBar
+            android:id="@+id/progressLogin"
+            style="?android:attr/progressBarStyleSmall"
+            android:visibility="gone"
+            android:layout_marginTop="12dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <Button
+            android:id="@+id/buttonmasuk"
+            android:text="Masuk"
+            android:backgroundTint="@color/banner"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+    <Button
+        android:id="@+id/buttonLacak"
+        android:text="Lacak Paket Tanpa Login"
+        android:textColor="@color/banner"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        android:backgroundTint="#FFFFFF"
+        android:layout_below="@id/cardLogin"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tvInisial" type="id"/>
+    <item name="tvNamaAkun" type="id"/>
+    <item name="tvUsernameAkun" type="id"/>
+    <item name="tvRoleAkun" type="id"/>
+    <item name="btnEditAkun" type="id"/>
+    <item name="btnHapusAkun" type="id"/>
+</resources>

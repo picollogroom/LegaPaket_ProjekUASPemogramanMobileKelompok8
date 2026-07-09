@@ -1,0 +1,433 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F5F5F5">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="24dp">
+
+        <!-- Header -->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/banner"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                app:tint="#FFFFFF"/>
+
+            <TextView
+                android:text="Buat Resi"
+                android:textColor="#FFFFFF"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_centerInParent="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </RelativeLayout>
+
+        <!-- ===================== PILIHAN MEMBER ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:layout_margin="12dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Customer"
+                android:textColor="@color/banner"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Pilih dari Member"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerMember"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <!-- Info member terpilih -->
+            <LinearLayout
+                android:id="@+id/layoutInfoMember"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#FCE4F0"
+                android:padding="12dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tvInfoNamaMember"
+                    android:text="Nama: -"
+                    android:textSize="12sp"
+                    android:textColor="#333333"
+                    android:textStyle="bold"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvInfoTelpMember"
+                    android:text="Telepon: -"
+                    android:textSize="12sp"
+                    android:textColor="#555555"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <TextView
+                    android:id="@+id/tvInfoAlamatMember"
+                    android:text="Alamat: -"
+                    android:textSize="12sp"
+                    android:textColor="#555555"
+                    android:layout_marginTop="2dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <Button
+                    android:id="@+id/btnGunakanMember"
+                    android:text="Gunakan Data Ini sebagai Pengirim"
+                    android:textColor="#FFFFFF"
+                    android:textSize="12sp"
+                    android:backgroundTint="@color/banner"
+                    android:layout_marginTop="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- ===================== DATA PENGIRIM ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:layout_margin="12dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Data Pengirim"
+                android:textColor="@color/banner"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etNamaPengirim"
+                android:hint="Nama Pengirim"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etAlamatPengirim"
+                android:hint="Alamat Pengirim"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etTelpPengirim"
+                android:hint="No. Telepon Pengirim"
+                android:inputType="phone"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- ===================== DATA PENERIMA ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:layout_margin="12dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Data Penerima"
+                android:textColor="@color/banner"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etNamaPenerima"
+                android:hint="Nama Penerima"
+                android:inputType="textCapWords"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etAlamatPenerima"
+                android:hint="Alamat Penerima"
+                android:inputType="textMultiLine"
+                android:minLines="2"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <EditText
+                android:id="@+id/etTelpPenerima"
+                android:hint="No. Telepon Penerima"
+                android:inputType="phone"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Kota Tujuan"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerKotaTujuan"
+                android:entries="@array/kota_tujuan_array"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- ===================== DATA BARANG ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:layout_margin="12dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Data Barang"
+                android:textColor="@color/banner"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Jenis Barang"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Spinner
+                android:id="@+id/spinnerJenisBarang"
+                android:entries="@array/jenis_barang_array"
+                android:background="@android:drawable/btn_dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:text="Dimensi Barang (cm)"
+                android:textColor="#888888"
+                android:textSize="12sp"
+                android:layout_marginTop="14dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <!-- Panjang, Lebar, Tinggi sejajar -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/etPanjang"
+                    android:hint="Panjang"
+                    android:inputType="numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginEnd="4dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/etLebar"
+                    android:hint="Lebar"
+                    android:inputType="numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginEnd="4dp"
+                    android:layout_height="wrap_content"/>
+
+                <EditText
+                    android:id="@+id/etTinggi"
+                    android:hint="Tinggi"
+                    android:inputType="numberDecimal"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_marginStart="4dp"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/etBerat"
+                android:hint="Berat Barang (kg)"
+                android:inputType="numberDecimal"
+                android:layout_marginTop="12dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- ===================== METODE PEMBAYARAN ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@drawable/card_bg"
+            android:layout_margin="12dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Metode Pembayaran"
+                android:textColor="@color/banner"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="6dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <RadioGroup
+                android:id="@+id/radioGroupPembayaran"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:id="@+id/radioCOD"
+                    android:text="COD (Bayar di Tempat)"
+                    android:checked="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioTransfer"
+                    android:text="Transfer Bank"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+                <RadioButton
+                    android:id="@+id/radioEwallet"
+                    android:text="E-Wallet"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </RadioGroup>
+
+        </LinearLayout>
+
+        <!-- ===================== PERHITUNGAN BIAYA ===================== -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/banner"
+            android:layout_margin="12dp"
+            android:layout_marginTop="0dp"
+            android:padding="16dp">
+
+            <TextView
+                android:text="Estimasi Biaya Pengiriman"
+                android:textColor="#FFFFFF"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvBeratVolume"
+                android:text="Berat Volume: -"
+                android:textColor="#FFE6F0"
+                android:textSize="12sp"
+                android:layout_marginBottom="2dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tvTotalBiaya"
+                android:text="Rp 0"
+                android:textColor="#FFFFFF"
+                android:textSize="26sp"
+                android:textStyle="bold"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <Button
+                android:id="@+id/btnHitungBiaya"
+                android:text="Hitung Biaya"
+                android:textColor="@color/banner"
+                android:backgroundTint="#FFFFFF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+        <!-- ===================== BUTTON SUBMIT ===================== -->
+        <Button
+            android:id="@+id/btnBuatResi"
+            android:text="BUAT RESI"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:backgroundTint="@color/banner"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"/>
+
+    </LinearLayout>
+
+</ScrollView>

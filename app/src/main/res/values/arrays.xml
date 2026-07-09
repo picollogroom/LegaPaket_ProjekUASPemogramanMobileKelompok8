@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="jenis_laporan_array">
+        <item>Laporan Harian</item>
+        <item>Laporan Mingguan</item>
+        <item>Laporan Bulanan</item>
+        <item>Custom Periode</item>
+    </string-array>
+
+    <string-array name="tipe_data_array">
+        <item>Semua Pengiriman</item>
+        <item>Pengiriman Terkirim Saja</item>
+        <item>Pendapatan</item>
+    </string-array>
+
+    <string-array name="status_laporan_array">
+        <item>Semua Status</item>
+        <item>Diproses</item>
+        <item>Dikirim</item>
+        <item>Terkirim</item>
+        <item>Dibatalkan</item>
+    </string-array>
+
+    <string-array name="armada_array">
+        <item>B 1234 XYZ - Truk Engkel</item>
+        <item>B 5678 ABC - Truk Fuso</item>
+        <item>B 9012 DEF - Truk CDD</item>
+        <item>B 3456 GHI - Van Box</item>
+    </string-array>
+
+    <string-array name="sopir_array">
+        <item>Rudi Setiawan</item>
+        <item>Joko Prasetyo</item>
+        <item>Wahyu Nugroho</item>
+        <item>Agus Salim</item>
+    </string-array>
+
+    <string-array name="jenis_laporan_barang_array">
+        <item>Semua Mutasi</item>
+        <item>Barang Masuk</item>
+        <item>Barang Keluar</item>
+    </string-array>
+
+    <string-array name="kategori_barang_array">
+        <item>Semua Kategori</item>
+        <item>Elektronik</item>
+        <item>Pakaian</item>
+        <item>Makanan</item>
+        <item>Pecah Belah</item>
+        <item>Dokumen</item>
+        <item>Lainnya</item>
+    </string-array>
+
+    <string-array name="status_trip_array">
+        <item>Semua Status</item>
+        <item>Terjadwal</item>
+        <item>Berjalan</item>
+        <item>Selesai</item>
+        <item>Dibatalkan</item>
+    </string-array>
+
+    <string-array name="kota_filter_array">
+        <item>Semua Kota</item>
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Medan</item>
+        <item>Yogyakarta</item>
+        <item>Bali</item>
+        <item>Makassar</item>
+        <item>Semarang</item>
+    </string-array>
+    <string-array name="kota_tujuan_array">
+        <item>Jakarta</item>
+        <item>Bandung</item>
+        <item>Surabaya</item>
+        <item>Medan</item>
+        <item>Yogyakarta</item>
+        <item>Bali</item>
+        <item>Makassar</item>
+        <item>Semarang</item>
+    </string-array>
+
+    <string-array name="jenis_barang_array">
+        <item>Dokumen</item>
+        <item>Pakaian</item>
+        <item>Elektronik</item>
+        <item>Makanan</item>
+        <item>Pecah Belah</item>
+        <item>Lainnya</item>
+    </string-array>
+
+</resources>

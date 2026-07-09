@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Layer 1: warna solid banner -->
+    <item>
+        <shape android:shape="rectangle">
+            <solid android:color="#FFFF" />
+        </shape>
+    </item>
+
+    <!-- Layer 2: oval putih yang menutupi bagian bawah → efek cembung -->
+    <item
+        android:top="250dp"
+        android:left="-80dp"
+        android:right="-80dp"
+        android:bottom="-100dp">
+        <shape android:shape="oval">
+            <solid android:color="@color/banner" />
+        </shape>
+    </item>
+
+</layer-list>

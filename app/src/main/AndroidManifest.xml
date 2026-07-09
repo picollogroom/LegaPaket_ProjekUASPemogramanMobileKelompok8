@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -12,10 +15,70 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.LegaPaket">
         <activity
+            android:name=".UpdateStatusPaket"
+            android:exported="false" />
+        <activity
+            android:name=".BerandaKeuangan"
+            android:exported="false" />
+        <activity
+            android:name=".RiwayatTrip"
+            android:exported="false" />
+        <activity
+            android:name=".StokGudang"
+            android:exported="false" />
+        <activity
+            android:name=".LaporanDataBarang"
+            android:exported="false" />
+        <activity
+            android:name=".BuatTrip"
+            android:exported="false" />
+        <activity
+            android:name=".BerandaWarehouse"
+            android:exported="false" />
+        <activity
+            android:name=".TambahMember"
+            android:exported="false" />
+        <activity
+            android:name=".TambahAkun"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaMember"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaAkun"
+            android:exported="false" />
+        <activity
+            android:name=".KelolaLaporan_admin"
+            android:exported="false" />
+        <activity
+            android:name=".BuatResi_admin"
+            android:exported="false" />
+        <activity
+            android:name=".BerandaAdmin"
+            android:exported="false" />
+        <activity
+            android:name=".ActivityTrackingPaket"
+            android:exported="false" />
+        <activity
+            android:name=".fragment_laporan"
+            android:exported="false" />
+        <activity
+            android:name=".activity_buat_resi"
+            android:exported="false" />
+        <activity
+            android:name=".MainMenuAgen"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
-            android:exported="false"
+            android:exported="true"
             android:label="@string/title_activity_login"
-            android:theme="@style/Theme.LegaPaket" />
+            android:theme="@style/Theme.LegaPaket">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
     </application>
 
 </manifest>

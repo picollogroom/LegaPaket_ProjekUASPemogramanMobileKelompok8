@@ -1,0 +1,35 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    // CATATAN PENTING:
+    // Karena login pakai custom auth (bukan Firebase Authentication), Firestore TIDAK TAHU
+    // siapa yang sedang login dari sisi security rules (request.auth akan selalu null).
+    // Artinya rules di bawah ini TIDAK BISA membedakan role user seperti layaknya
+    // Firebase Auth + custom claims.
+    //
+    // Untuk tugas/skripsi, opsi paling praktis ada 2:
+    // 1) (PALING MUDAH, dipakai sebagai default di bawah) Buka akses read/write untuk semua,
+    //    lalu kontrol hak akses cukup di level aplikasi (Kotlin) berdasarkan role di SharedPreferences.
+    //    Cocok untuk demo/tugas kuliah, TAPI tidak aman untuk aplikasi publik/production.
+    // 2) (LEBIH AMAN) Migrasi ke Firebase Authentication (email/password) + custom claims role,
+    //    supaya request.auth.token.role bisa dipakai di rules ini. Kalau butuh, bilang aja
+    //    nanti aku bantu migrasi.
+
+    match /akun/{akunId} {
+      allow read, write: if true;
+    }
+
+    match /member/{memberId} {
+      allow read, write: if true;
+    }
+
+    match /paket/{noResi} {
+      allow read, write: if true;
+    }
+
+    match /trip/{tripId} {
+      allow read, write: if true;
+    }
+  }
+}

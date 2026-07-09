@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "738758285575",
+    "project_id": "lega-paket",
+    "storage_bucket": "lega-paket.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738758285575:android:8abff8ea162954f435cda2",
+        "android_client_info": {
+          "package_name": "com.example.legapaket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh6duZU2AmdfYnmaMJNM0G4ka5mH3h2Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:738758285575:android:539cfca79f7ce02d35cda2",
+        "android_client_info": {
+          "package_name": "com.example.legapaket"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBh6duZU2AmdfYnmaMJNM0G4ka5mH3h2Z8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
